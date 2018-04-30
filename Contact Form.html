@@ -12,11 +12,13 @@
 	<link href="https://fonts.googleapis.com/css?family=Boogaloo" rel="stylesheet">
 	<link href="https://fonts.googleapis.com/css?family=Neuton" rel="stylesheet">
 	<link href="https://fonts.googleapis.com/css?family=Song+Myung" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=IBM+Plex+Serif" rel="stylesheet">
 	<link rel="stylesheet" href="style.css">
 </head>
 <body>	
+
 	<div class="container">
-		<h1 class="brand"><center>Connect with <span class="span">Rohan...</span></centercenter></h1>
+		<h1 class="brand"><center>Connect with <span class="span">Rohan...</span></center></h1>
 		<div class="wrapper">
 			<div class="company-info">
 				<h3>Contact Me...</h3>
@@ -28,29 +30,32 @@
 			</div>
 			<div class="contact">
 				<h3>Email me</h3>
-				<form class="forms">
+				<div class="alert">Thanks for contacting me. Will reply ASAP</div>
+				<form class="forms" id="contactForm">
 					<p>
 						<label><i class="fa fa-user"></i> Name</label>
-						<input type="text" name="name" placeholder="Your Name">
+						<input type="text" name="name" placeholder="Your Name" id="name">
 					</p>
 					<p>
 						<label><i class="fa fa-envelope-square"></i> Email Address</label>
-						<input type="email" name="email" placeholder="Email">
+						<input type="text" name="email" placeholder="Email" id="email">
 					</p>
 					<p>
 						<label><i class="fa fa-phone"></i> Phone Number</label>
-						<input type="text" name="phone" placeholder="Phone number">
+						<input type="text" name="phone" placeholder="Phone number" id="phone">
 					</p>
 					<p class="full">
 						<label><i class="fa fa-comment"></i> Message</label>
-						<textarea name="message" rows="5" placeholder="Starting typing..."></textarea>
+						<textarea name="message" rows="5" placeholder="Starting typing..." id="message"></textarea>
 					</p>
 					<p class="full">
-						<button class="b1">Submit</button>
+						<button class="b1" type="submit">Submit</button>
 					</p>
 				</form>
 			</div>
 		</div>
 	</div>
+	<script src="https://www.gstatic.com/firebasejs/4.13.0/firebase.js"></script>
+	<<script src="main.js" type="text/javascript"></script>
 </body>
 </html>

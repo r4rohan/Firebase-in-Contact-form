@@ -105,6 +105,16 @@ ul{
 	transition: background-color 2s ease-out;
 }
 
+.alert{
+	text-align: center;
+	padding: 10px;
+	background: #d7f442;
+	color: #fff;
+	margin-bottom: 10px;
+	display: none;
+	font-family: 'IBM Plex Serif', serif;
+}
+
 /*Large screens*/
 
 @media (min-width:700px) {
